@@ -1,94 +1,155 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { product } from "./data";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <div className={styles.header}>
+        <div className={styles.wrtext}>
+          <span className={styles.hTitle}>
+            Get Quality <label>Products</label> for your Company
+          </span>
+          <div className={styles.hDescript}>
+            <p>
+              <span className={styles.labelhDescript}>
+                PT DeJeHa Anja Indonesia
+              </span>{" "}
+              is established with the spirit to move forward and successfully
+              brings qualified products to people.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      {/* TARGET CUSTOMER */}
+      <div className={styles.TCustomer}>
+        <h3>Target Customer</h3>
+        <p>find the right product for the company's needs</p>
+
+        <div className={styles.WTCcard}>
+          <div className={styles.TCcard}>
+            <p>Hospital & Clinic</p>
+          </div>
+          <div className={styles.TCcard}>
+            <p>Industries</p>
+          </div>
+          <div className={styles.TCcard}>
+            <p>Retailers</p>
+          </div>
+        </div>
       </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
+      {/* TARGET CUSTOMER */}
+      <div className={styles.PCategory}>
+        <div className={styles.PCategoryInner}>
+          <h3>Product Category</h3>
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            People’s health, safety and comfort are matter most to us.
+            Therefore, we professionally supply original products that has
+            outstanding quality.Below are the products :
           </p>
-        </a>
+
+          <div className={styles.PCleft}>
+            <div className={styles.PCWimg}>
+              <Image
+                className={styles.imgPC}
+                src="/assets/PC1.png"
+                width={500}
+                height={500}
+                alt="Picture of the author"
+              />
+            </div>
+            <div className={styles.PContent}>
+              <h4>MEDICAL DEVICES</h4>
+              <p>
+                We are professionally supply original products that has passed
+                Health Ministry qualification and having distribution licenses
+                from Trade Ministry. Completed by International standards, ISO ,
+                CE and FDA .
+              </p>
+              <a href="http://">View Product</a>
+            </div>
+          </div>
+
+          <div className={styles.PCleft}>
+            <div className={styles.PContent}>
+              <h4>SAFETY EQUIPMENT</h4>
+              <p>
+                We provide qualified safety equipment and tools. We concern to
+                individual safety, protective equipment, first aid supply in the
+                work place.
+              </p>
+              <a href="http://">View Product</a>
+            </div>
+            <div className={styles.PCWimg}>
+              <Image
+                className={styles.imgPC}
+                src="/assets/PC2.png"
+                width={500}
+                height={500}
+                alt="Picture of the author"
+              />
+            </div>
+          </div>
+
+          <div className={styles.PCleft}>
+            <div className={styles.PCWimg}>
+              <Image
+                className={styles.imgPC}
+                src="/assets/PC1.png"
+                width={500}
+                height={500}
+                alt="Picture of the author"
+              />
+            </div>
+            <div className={styles.PContent}>
+              <h4>SUPPLIES & MARKETING TOOLS</h4>
+              <p>
+                We are professionally supply original products that has passed
+                Health Ministry qualification and having distribution licenses
+                from Trade Ministry. Completed by International standards, ISO ,
+                CE and FDA.
+              </p>
+              <a href="http://">View Product</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* FEATURE PRODUCT */}
+
+      <div className={styles.wrapFeature}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            marginBottom: 12,
+          }}
+        >
+          <p>Feature Product</p>
+          <Link href="/product">View All</Link>
+          {/* <a href="http://">View All</a> */}
+        </div>
+        <div className={styles.wrapfeatureproduct}>
+          {product.map((data, index) => {
+            return (
+              <div key={index} className={styles.cardProductFeature}>
+                <div className={styles.imageCardProduct}>
+                  <Image
+                    src={`/assets/${data.img}`}
+                    width={0}
+                    layout="fill"
+                    objectFit="contain"
+                    alt="Picture of the author"
+                  />
+                </div>
+                <p style={{ textAlign: "center" }}>{data.name}</p>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </main>
   );
