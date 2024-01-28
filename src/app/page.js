@@ -9,7 +9,7 @@ export default function Home() {
       <div className={styles.header}>
         <div className={styles.wrtext}>
           <span className={styles.hTitle}>
-            Get Quality <label>Products</label> for your Company
+            Get Quality <span>Products</span> for your Company
           </span>
           <div className={styles.hDescript}>
             <p>
@@ -69,7 +69,10 @@ export default function Home() {
                 from Trade Ministry. Completed by International standards, ISO ,
                 CE and FDA .
               </p>
-              <a href="http://">View Product</a>
+
+              <Link className={styles.btnLink} href="/product">
+                View Product
+              </Link>
             </div>
           </div>
 
@@ -81,7 +84,9 @@ export default function Home() {
                 individual safety, protective equipment, first aid supply in the
                 work place.
               </p>
-              <a href="http://">View Product</a>
+              <Link className={styles.btnLink} href="/product">
+                View Product
+              </Link>
             </div>
             <div className={styles.PCWimg}>
               <Image
@@ -112,7 +117,9 @@ export default function Home() {
                 from Trade Ministry. Completed by International standards, ISO ,
                 CE and FDA.
               </p>
-              <a href="http://">View Product</a>
+              <Link className={styles.btnLink} href="/product">
+                View Product
+              </Link>
             </div>
           </div>
         </div>
