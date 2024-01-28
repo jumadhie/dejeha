@@ -21,6 +21,25 @@ export default function Home() {
             </p>
           </div>
         </div>
+
+        <div
+          style={{
+            position: "absolute",
+            right: "10%",
+            top: "10%",
+            bottom: 0,
+            height: 400,
+            width: 600,
+          }}
+        >
+          <Image
+            // className={styles.imgPC}
+            src="/assets/bannerimgs.png"
+            layout="fill"
+            objectFit="contain"
+            alt="Picture of the author"
+          />
+        </div>
       </div>
 
       {/* TARGET CUSTOMER */}
