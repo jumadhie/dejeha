@@ -1,0 +1,66 @@
+.aboutme {
+  width: 50%;
+}
+
+.containerAbout {
+  display: flex;
+  padding: 50px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgAbout {
+  height: 360px;
+  width: 25%;
+  background-image: url(/assets/imageabout.png);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  margin-right: 55px;
+}
+
+.aboutme h1 {
+  margin-bottom: 24px;
+}
+.aboutme p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+.benefit {
+  background: rgb(230, 245, 250);
+  width: 100%;
+
+  padding: 24px;
+  text-align: center;
+}
+
+.benefit h2 {
+  margin-bottom: 24px;
+}
+
+.wrapcardbenefit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cardbenefit {
+  width: 30%;
+  background: rgb(255, 255, 255);
+  margin-right: 24px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  height: 150px;
+}
+
+.cardbenefit p {
+  font-size: 12px;
+}

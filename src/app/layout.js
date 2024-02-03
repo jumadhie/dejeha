@@ -34,6 +34,9 @@ export default function RootLayout({ children }) {
           </ul>
         </div>
         {children}
+        <div style={{ height: 200, background: "grey" }}>
+          <h1>halaman footer</h1>
+        </div>
       </body>
     </html>
   );

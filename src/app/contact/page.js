@@ -1,5 +1,13 @@
+import global from "../page.module.css";
+
 const page = () => {
-  return <div>halaman contact</div>;
+  return (
+    <div>
+      <div className={global.bannerSection}>
+        <div className={global.textBanner}>Contact</div>
+      </div>
+    </div>
+  );
 };
 
 export default page;

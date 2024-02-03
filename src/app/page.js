@@ -122,7 +122,7 @@ export default function Home() {
             <div className={styles.PCWimg}>
               <Image
                 className={styles.imgPC}
-                src="/assets/PC1.png"
+                src="/assets/PC3.jpg"
                 width={500}
                 height={500}
                 alt="Picture of the author"
