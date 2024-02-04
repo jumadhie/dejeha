@@ -2,9 +2,7 @@
 import Image from "next/image";
 import global from "../page.module.css";
 import styles from "./product.module.css";
-
 import { product } from "./../data";
-import { FaFileInvoiceDollar } from "react-icons/fa6";
 import { useState } from "react";
 
 const dataFilter = [
@@ -27,7 +25,6 @@ const dataFilter = [
 ];
 
 const page = () => {
-  const [active, setActive] = useState(false);
   const [category, setCategori] = useState("All");
   const filtered = product.filter((employee) => {
     return category === "All" ? employee : employee.category === category;
