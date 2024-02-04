@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className={styles.topbar}>
+        {/* <div className={styles.topbar}>
           <div>
             <Link href="/">DEJEHA ANJA INDONESIA</Link>
           </div>
@@ -32,11 +32,11 @@ export default function RootLayout({ children }) {
               <Link href="/contact">Contact</Link>
             </li>
           </ul>
-        </div>
+        </div> */}
         {children}
-        <div style={{ height: 200, background: "grey" }}>
+        {/* <div style={{ height: 200, background: "grey" }}>
           <h1>halaman footer</h1>
-        </div>
+        </div> */}
       </body>
     </html>
   );

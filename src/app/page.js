@@ -79,6 +79,15 @@ export default function Home() {
           </div>
 
           <div className={styles.PCleft}>
+            <div className={styles.PCWimg}>
+              <Image
+                className={styles.imgPC}
+                src="/assets/PC2.png"
+                width={500}
+                height={500}
+                alt="Picture of the author"
+              />
+            </div>
             <div className={styles.PContent}>
               <h4>SAFETY EQUIPMENT</h4>
               <p>
@@ -89,15 +98,6 @@ export default function Home() {
               <Link className={styles.btnLink} href="/product">
                 View Product
               </Link>
-            </div>
-            <div className={styles.PCWimg}>
-              <Image
-                className={styles.imgPC}
-                src="/assets/PC2.png"
-                width={500}
-                height={500}
-                alt="Picture of the author"
-              />
             </div>
           </div>
 
@@ -135,26 +135,27 @@ export default function Home() {
             display: "flex",
             justifyContent: "space-between",
             marginBottom: 12,
+            padding: "0px 6px 0 6px",
           }}
         >
           <p>Feature Product</p>
           <Link href="/product">View All</Link>
-          {/* <a href="http://">View All</a> */}
         </div>
         <div className={styles.wrapfeatureproduct}>
           {product.map((data, index) => {
             return (
               <div key={index} className={styles.cardProductFeature}>
-                <div className={styles.imageCardProduct}>
+                <div className={styles.wrapCard}>
                   <Image
+                    className={styles.imageCardProduct}
                     src={`/assets/${data.img}`}
-                    width={0}
-                    layout="fill"
-                    objectFit="contain"
+                    width={100}
+                    height={100}
                     alt="Picture of the author"
                   />
+
+                  <p style={{ textAlign: "center" }}>{data.name}</p>
                 </div>
-                <p style={{ textAlign: "center" }}>{data.name}</p>
               </div>
             );
           })}

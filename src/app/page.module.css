@@ -212,7 +212,6 @@
 }
 
 .PCategoryInner {
-  /* background-color: #f0faff; */
   background-color: #e6f5fa;
   width: 85%;
   padding: 42px 42px;
@@ -244,6 +243,13 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 72px;
+}
+.PCleft:nth-child(4) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 72px;
+  flex-direction: row-reverse;
 }
 
 .PCWimg {
@@ -283,7 +289,7 @@
 .wrapFeature {
   width: 85%;
   margin: 0 auto;
-  padding: 42px 72px;
+  padding: 42px 56px;
 }
 
 .wrapfeatureproduct {
@@ -292,27 +298,27 @@
 
 .cardProductFeature {
   width: 20%;
-  height: 300px;
   background-color: white;
-  margin-right: 12px;
+  padding: 0px 6px 0 6px;
+}
+
+.wrapCard {
   border-radius: 6px;
   border: 1px solid rgb(183, 183, 183);
   cursor: pointer;
-}
-.cardProductFeature:last-child {
-  width: 20%;
-  height: 300px;
-  background-color: white;
-  margin-right: 0px;
-  border-radius: 6px;
-  border: 1px solid rgb(183, 183, 183);
+  padding-bottom: 12px;
 }
 
 .imageCardProduct {
   position: relative;
   height: 250px;
-  width: 75%;
-  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: #f6f6f6;
+  object-fit: contain;
+  padding: 12px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .bannerSection {
@@ -358,4 +364,696 @@
   background-color: #edf6f9;
   padding: 12px;
   margin: 12px;
+}
+
+/* 768px -1024px */
+
+@media only screen and (max-width: 768px) {
+  .header {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #2cc5e7;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 24px;
+  }
+
+  .wrtext {
+    width: 70%;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .hTitle {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 200px;
+  }
+
+  .btnLink {
+    background-color: #ffd583;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 24px;
+  }
+
+  .hTitle span {
+    background-color: #ffd583;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    padding: 3px 10px;
+    border-radius: 6px;
+    color: #3c3434;
+  }
+
+  .hDescript {
+    margin-top: 18px;
+  }
+
+  .labelhDescript {
+    color: #ffffff;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .hDescript p {
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .imgbanner {
+    width: 40%;
+    background-image: url(/assets/bannerimgsm.png);
+    background-size: contain;
+    margin: 0 auto;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 80px;
+    margin-top: 24px;
+  }
+  .TCustomer {
+    padding: 42px 12px 0px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .TCustomer h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 6px;
+  }
+  .TCustomer p {
+    font-size: 15px;
+    margin-bottom: 24px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  .WTCcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    flex-direction: row;
+  }
+
+  .TCcard:nth-child(1) {
+    border-radius: 12px;
+    display: flex;
+    height: 210px;
+    align-items: center;
+    flex: 1 0;
+    align-self: stretch;
+    margin-bottom: 0px;
+    position: relative;
+    margin-right: 12px;
+    background-image: url(/assets/TChospital.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  .TCcard:nth-child(1):hover {
+    background-size: 140%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  .TCcard:nth-child(2):hover {
+    background-size: 140%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  .TCcard:nth-child(3):hover {
+    background-size: 140%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  .TCcard:nth-child(2) {
+    border-radius: 12px;
+    display: flex;
+    height: 210px;
+    align-items: center;
+    flex: 1 0;
+    align-self: stretch;
+    position: relative;
+    margin-right: 12px;
+    margin-bottom: 0px;
+    background-image: url(/assets/TCindustrie.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  .TCcard:nth-child(3) {
+    border-radius: 12px;
+    display: flex;
+    height: 210px;
+    align-items: center;
+    flex: 1 0;
+    align-self: stretch;
+    position: relative;
+    background-image: url(/assets/TCindustrie.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  .TCcard p {
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    color: #000;
+    text-shadow: 0px 3px 4px rgba(255, 255, 255, 0.51);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .PCategory {
+    padding: 42px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .PCategoryInner {
+    background-color: #e6f5fa;
+    width: 100%;
+    padding: 42px 12px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .PCategoryInner p {
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 24px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .PCategoryInner h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .PCleft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+    flex-direction: row;
+    padding: 0px 16px 0px 16px;
+  }
+
+  .PCleft:nth-child(4) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 72px;
+  }
+
+  .PCWimg {
+    width: 80%;
+    text-align: center;
+    margin-right: 32px;
+  }
+
+  .PCWimg:nth-child(1) {
+    width: 80%;
+    text-align: center;
+    margin-left: 32px;
+  }
+
+  .PContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .imgPC {
+    border-radius: 12px;
+    height: 190px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .PContent p {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: justify;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .PContent h4 {
+    color: #000;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 12px;
+  }
+
+  .btnLink {
+    background-color: #ffd583;
+    padding: 10px 21px;
+    border-radius: 4px;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .wrapFeature {
+    width: 93%;
+    margin: 0 auto;
+    padding: 42px 0px;
+  }
+
+  .wrapfeatureproduct {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cardProductFeature {
+    width: 33%;
+    background-color: white;
+    padding: 0px 6px 0 6px;
+    margin-bottom: 12px;
+  }
+
+  .wrapCard {
+    border-radius: 6px;
+    border: 1px solid rgb(183, 183, 183);
+    cursor: pointer;
+    padding-bottom: 12px;
+  }
+
+  .imageCardProduct {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 8px;
+    background-color: #f6f6f6;
+    padding: 12px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .wrapclient {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 72px;
+    margin-top: 72px;
+  }
+
+  .wrapclient h3 {
+    margin-bottom: 24px;
+  }
+  .wrapclientitem {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .itemclient {
+    background-color: #edf6f9;
+    padding: 12px;
+    margin: 12px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #2cc5e7;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 24px;
+  }
+
+  .wrtext {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .hTitle {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 200px;
+  }
+
+  .btnLink {
+    background-color: #ffd583;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 22px;
+  }
+
+  .hTitle span {
+    background-color: #ffd583;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    padding: 3px 10px;
+    border-radius: 6px;
+    color: #3c3434;
+  }
+
+  .hDescript {
+    margin-top: 18px;
+  }
+
+  .labelhDescript {
+    color: #ffffff;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .hDescript p {
+    color: #000;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .imgbanner {
+    width: 60%;
+    background-image: url(/assets/bannerimgsm.png);
+    background-size: contain;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80px;
+    margin-top: 24px;
+  }
+
+  .TCustomer {
+    padding: 42px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .TCustomer h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 6px;
+  }
+  .TCustomer p {
+    font-size: 15px;
+    margin-bottom: 24px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  .WTCcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 500px;
+    flex-direction: column;
+  }
+
+  .TCcard:nth-child(1) {
+    border-radius: 12px;
+    display: flex;
+    height: 210px;
+    align-items: center;
+    flex: 1 0;
+    align-self: stretch;
+    margin-bottom: 16px;
+    position: relative;
+    margin-right: 0px;
+    background-image: url(/assets/TChospital.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  .TCcard:nth-child(1):hover {
+    background-size: 140%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  .TCcard:nth-child(2):hover {
+    background-size: 140%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  .TCcard:nth-child(3):hover {
+    background-size: 140%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  .TCcard:nth-child(2) {
+    border-radius: 12px;
+    display: flex;
+    height: 210px;
+    align-items: center;
+    flex: 1 0;
+    align-self: stretch;
+    position: relative;
+    margin-right: 0px;
+    margin-bottom: 16px;
+    background-image: url(/assets/TCindustrie.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  .TCcard:nth-child(3) {
+    border-radius: 12px;
+    display: flex;
+    height: 210px;
+    align-items: center;
+    flex: 1 0;
+    align-self: stretch;
+    position: relative;
+    background-image: url(/assets/TCindustrie.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  .TCcard p {
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    color: #000;
+    text-shadow: 0px 3px 4px rgba(255, 255, 255, 0.51);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .PCategory {
+    padding: 42px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .PCategoryInner {
+    background-color: #e6f5fa;
+    width: 100%;
+    padding: 32px 12px 0px 12px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .PCategoryInner p {
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 42px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-align: center;
+  }
+  .PCategoryInner h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 12px;
+  }
+
+  .PCleft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+    flex-direction: column;
+  }
+
+  .PCleft:nth-child(4) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+    flex-direction: column;
+  }
+
+  .PCWimg {
+    width: 100% !important;
+    text-align: center;
+  }
+
+  .PContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .imgPC {
+    border-radius: 12px;
+    height: 190px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 12px;
+  }
+  .PContent p {
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: justify;
+    width: 100%;
+    margin-bottom: 14px;
+  }
+  .PContent h4 {
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 12px;
+  }
+
+  .btnLink {
+    background-color: #ffd583;
+    padding: 10px 21px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-bottom: 32px;
+  }
+
+  .wrapFeature {
+    width: 93%;
+    margin: 0 auto;
+    padding: 42px 0px;
+  }
+
+  .wrapfeatureproduct {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cardProductFeature {
+    width: 50%;
+    background-color: white;
+    padding: 0px 6px 0 6px;
+    margin-bottom: 12px;
+  }
+
+  .wrapCard {
+    border-radius: 6px;
+    border: 1px solid rgb(183, 183, 183);
+    cursor: pointer;
+    padding-bottom: 12px;
+  }
+
+  .imageCardProduct {
+    position: relative;
+    height: 180px;
+    width: 100%;
+    margin-bottom: 8px;
+    background-color: #f6f6f6;
+    padding: 12px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .wrapclient {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 72px;
+    margin-top: 0px;
+  }
+
+  .wrapclient h3 {
+    margin-bottom: 24px;
+  }
+  .wrapclientitem {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .itemclient {
+    background-color: #edf6f9;
+    padding: 8px;
+    margin: 8px;
+  }
 }
