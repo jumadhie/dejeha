@@ -39,11 +39,12 @@
 }
 
 .wrtext {
-  width: 488px;
+  width: 50%;
+  margin-right: 10%;
 }
 
 .hTitle {
-  font-size: 36px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -54,12 +55,12 @@
   background-color: #ffd583;
   padding: 12px 24px;
   border-radius: 4px;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .hTitle span {
   background-color: #ffd583;
-  font-size: 36px;
+  font-size: 42px;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
@@ -74,7 +75,7 @@
 
 .labelhDescript {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -85,6 +86,16 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.imgbanner {
+  width: 40%;
+  background-image: url(/assets/bannerimgs.png);
+  background-size: contain;
+  margin: 0 auto;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 100%;
 }
 
 .TCustomer {
@@ -323,4 +334,28 @@
   z-index: 100;
   color: white;
   font-weight: bold;
+}
+
+.wrapclient {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 72px;
+  margin-top: 72px;
+}
+
+.wrapclient h3 {
+  margin-bottom: 24px;
+}
+.wrapclientitem {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.itemclient {
+  background-color: #edf6f9;
+  padding: 12px;
+  margin: 12px;
 }

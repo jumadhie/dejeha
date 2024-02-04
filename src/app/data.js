@@ -20,3 +20,20 @@ export const product = [
     img: "FT5.png",
   },
 ];
+
+export const Client = [
+  { name: "Sinta Prima Feedmils" },
+  { name: " Vanimo General Hospital" },
+  { name: "Yuasa Battery" },
+  { name: "RS Meilia Cibubur" },
+  { name: " Klinik Raja Medika" },
+  { name: "Klinik Husadatama" },
+  { name: "Paramount Bed Indonesia" },
+  { name: "RS Premier Bintaro" },
+  { name: "Teknika Sarana Gardian" },
+  { name: "Padma Karya Prima" },
+  { name: "Klinik Duta" },
+  { name: "Volex" },
+  { name: "South East Asia Pipe Insutries" },
+  { name: "Etc" },
+];

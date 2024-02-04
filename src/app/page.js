@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import { product } from "./data";
+import { product, Client } from "./data";
 import Link from "next/link";
 
 export default function Home() {
@@ -22,24 +22,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div
-          style={{
-            position: "absolute",
-            right: "10%",
-            top: "10%",
-            bottom: 0,
-            height: 400,
-            width: 600,
-          }}
-        >
-          <Image
-            // className={styles.imgPC}
-            src="/assets/bannerimgs.png"
-            layout="fill"
-            objectFit="contain"
-            alt="Picture of the author"
-          />
-        </div>
+        <div className={styles.imgbanner}></div>
       </div>
 
       {/* TARGET CUSTOMER */}
@@ -77,7 +60,7 @@ export default function Home() {
                 src="/assets/PC1.png"
                 width={500}
                 height={500}
-                alt="Picture of the author"
+                alt="pc1"
               />
             </div>
             <div className={styles.PContent}>
@@ -172,6 +155,21 @@ export default function Home() {
                   />
                 </div>
                 <p style={{ textAlign: "center" }}>{data.name}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* CLIENT */}
+
+      <div className={styles.wrapclient}>
+        <h3>Client</h3>
+        <div className={styles.wrapclientitem}>
+          {Client.map((d, i) => {
+            return (
+              <div className={styles.itemclient} key={i}>
+                {d.name}
               </div>
             );
           })}
