@@ -2,22 +2,37 @@ export const product = [
   {
     name: "Face Mask 3ply",
     img: "FT1.png",
+    category: "Hospital",
   },
   {
     name: "Faceshield",
     img: "FT2.png",
+    category: "Hospital",
   },
   {
     name: "Safety Helmet",
     img: "FT3.png",
+    category: "Industri",
   },
   {
     name: "Safety Harness",
     img: "FT4.png",
+    category: "Industri",
   },
   {
     name: "T-Shirt",
     img: "FT5.png",
+    category: "Retailers",
+  },
+  {
+    name: "T-Shirt",
+    img: "FT5.png",
+    category: "Retailers",
+  },
+  {
+    name: "T-Shirt",
+    img: "FT5.png",
+    category: "Retail",
   },
 ];
 
@@ -37,3 +52,5 @@ export const Client = [
   { name: "South East Asia Pipe Insutries" },
   { name: "Etc" },
 ];
+
+export const Tes = "/assets/tes.svg";

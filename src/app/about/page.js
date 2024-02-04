@@ -10,7 +10,7 @@ const page = () => {
       <div className={styles.containerAbout}>
         <div className={styles.imgAbout}></div>
         <div className={styles.aboutme}>
-          <h1>about our company</h1>
+          <h1>About Our Company</h1>
           <p>
             PT DeJeHa Anja Indonesia is established with the spirit to move
             forward and successfully brings qualified products to people.

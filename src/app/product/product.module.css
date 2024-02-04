@@ -1,0 +1,196 @@
+.wrapProduct {
+  padding: 32px 72px 32px 72px;
+}
+
+.wrapFilter {
+  display: flex;
+  margin-top: 12px;
+}
+
+.wrapFilter ul {
+  list-style: none;
+  padding-inline-start: 0;
+  display: flex;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 600px;
+}
+
+.headerFilter {
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-bottom: 24px;
+}
+
+.headerFilter p {
+  font-size: 18px;
+}
+
+.itemCategori {
+  background-color: #ededec;
+  margin-right: 12px;
+  padding: 12px 24px 12px 24px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.active {
+  background-color: #ffd583 !important;
+  color: #3c3434;
+  margin-right: 12px;
+  padding: 12px 24px 12px 24px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.wrapfeatureproduct {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cardProductFeature {
+  width: 20%;
+  background-color: white;
+  padding: 0px 12px 0 12px;
+  margin-bottom: 24px;
+}
+
+.wrapCard {
+  border-radius: 6px;
+  border: 1px solid rgb(183, 183, 183);
+  cursor: pointer;
+  padding-bottom: 12px;
+}
+
+.imageCardProduct {
+  position: relative;
+  height: 250px;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: #f6f6f6;
+  object-fit: contain;
+  padding: 12px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 1024px) {
+  .wrapProduct {
+    padding: 32px 25px 32px 24px;
+  }
+
+  .imageCardProduct {
+    position: relative;
+    height: 165px;
+    width: 100%;
+    margin-bottom: 8px;
+    background-color: #f6f6f6;
+    object-fit: contain;
+    padding: 12px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .wrapProduct {
+    padding: 32px 25px 32px 24px;
+  }
+
+  .cardProductFeature {
+    width: 25%;
+    background-color: white;
+    padding: 0px 5px 0 5px;
+    margin-bottom: 10px;
+  }
+
+  .imageCardProduct {
+    position: relative;
+    height: 165px;
+    width: 100%;
+    margin-bottom: 8px;
+    background-color: #f6f6f6;
+    object-fit: contain;
+    padding: 12px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* .wrapFilter ul {
+    list-style: none;
+    padding-inline-start: 0;
+    display: flex;
+    flex-wrap: wrap;
+  } */
+
+  .wrapFilter ul {
+    list-style: none;
+    padding-inline-start: 0;
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 600px;
+  }
+
+  .headerFilter {
+    padding-left: 8px;
+    padding-right: 12px;
+    margin-bottom: 24px;
+  }
+
+  .headerFilter p {
+    font-size: 18px;
+  }
+  .itemCategori {
+    background-color: #ededec;
+    margin-right: 8px;
+    padding: 12px 18px 12px 18px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .active {
+    background-color: #ffd583 !important;
+    color: #3c3434;
+    margin-right: 8px;
+    padding: 12px 18px 12px 18px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .wrapProduct {
+    padding: 32px 14px 32px 14px;
+  }
+
+  .cardProductFeature {
+    width: 50%;
+    background-color: white;
+    padding: 0px 5px 0 5px;
+    margin-bottom: 10px;
+  }
+
+  .imageCardProduct {
+    position: relative;
+    height: 165px;
+    width: 100%;
+    margin-bottom: 8px;
+    background-color: #f6f6f6;
+    object-fit: contain;
+    padding: 12px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+}

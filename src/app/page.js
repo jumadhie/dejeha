@@ -142,23 +142,25 @@ export default function Home() {
           <Link href="/product">View All</Link>
         </div>
         <div className={styles.wrapfeatureproduct}>
-          {product.map((data, index) => {
-            return (
-              <div key={index} className={styles.cardProductFeature}>
-                <div className={styles.wrapCard}>
-                  <Image
-                    className={styles.imageCardProduct}
-                    src={`/assets/${data.img}`}
-                    width={100}
-                    height={100}
-                    alt="Picture of the author"
-                  />
+          {product
+            .filter((hasil, index) => index < 5)
+            .map((data, index) => {
+              return (
+                <div key={index} className={styles.cardProductFeature}>
+                  <div className={styles.wrapCard}>
+                    <Image
+                      className={styles.imageCardProduct}
+                      src={`/assets/${data.img}`}
+                      width={100}
+                      height={100}
+                      alt="Picture of the author"
+                    />
 
-                  <p style={{ textAlign: "center" }}>{data.name}</p>
+                    <p style={{ textAlign: "center" }}>{data.name}</p>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
         </div>
       </div>
 
