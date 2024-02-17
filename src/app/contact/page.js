@@ -13,6 +13,7 @@ export const metadata = {
   title: "Contact",
   description:
     "PT DeJeHa Anja Indonesia is established with the spirit to move forward and successfully brings qualified products to people",
+  icons: [{ rel: "icon", url: "/assets/ico.ico" }],
 };
 
 const page = () => {

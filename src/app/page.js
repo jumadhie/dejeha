@@ -4,19 +4,10 @@ import styles from "./page.module.css";
 import { product, Client } from "./data";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import Head from "next/head";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Head>
-        <title>Home</title>
-        <meta
-          name="description"
-          content="Check out iPhone 12 XR Pro and iPhone 12 Pro Max. Visit your local store and for expert advice."
-          key="desc"
-        />
-      </Head>
       <div className={styles.header}>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
