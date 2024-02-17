@@ -34,7 +34,7 @@
 }
 
 .topbar {
-  background-color: #2cc5e7;
+  /* background-color: #2cc5e7; */
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -43,6 +43,8 @@
   padding: 24px 48px;
   z-index: 1;
   color: white;
+  background-image: url(/assets/topbar.png);
+  background-size: cover;
 }
 
 .menutopbar {
@@ -56,7 +58,7 @@
   padding-right: 24px;
 }
 .menutopbar li:hover {
-  color: blue;
+  color: #ffd583;
   cursor: pointer;
 }
 
@@ -64,23 +66,27 @@
   height: 500px;
   width: 100%;
   position: relative;
-  background-color: #2cc5e7;
+  /* background-color: #2cc5e7; */
+  background-image: url(/assets/sample1.png);
+  background-size: cover;
   align-items: center;
   display: flex;
   padding: 24px 190px;
+  color: white;
 }
 
 .wrtext {
-  width: 50%;
+  width: 55%;
   margin-right: 10%;
 }
 
 .hTitle {
-  font-size: 48px;
+  font-size: 64px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   margin-bottom: 200px;
+  color: white;
 }
 
 .btnLink {
@@ -92,13 +98,14 @@
 
 .hTitle span {
   background-color: #ffd583;
-  font-size: 42px;
+  font-size: 64px;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
   padding: 3px 10px;
   border-radius: 6px;
   color: #3c3434;
+  /* color: white; */
 }
 
 .hDescript {
@@ -106,17 +113,17 @@
 }
 
 .labelhDescript {
-  color: #ffffff;
+  color: #ffd583;
   font-size: 22px;
   font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  font-weight: 400;
+  line-height: 28px;
 }
 .hDescript p {
-  color: #000;
+  color: white;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
 }
 
@@ -139,18 +146,18 @@
 }
 
 .TCustomer h3 {
-  font-size: 24px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  margin-bottom: 6px;
+  margin-bottom: 12px;
 }
 .TCustomer p {
   font-size: 18px;
   margin-bottom: 24px;
   font-style: normal;
   font-weight: 200;
-  line-height: normal;
+  line-height: 26px;
   margin-bottom: 32px;
 }
 
@@ -218,7 +225,7 @@
   flex: 1 0;
   align-self: stretch;
   position: relative;
-  background-image: url(/assets/TCindustrie.png);
+  background-image: url(/assets/TCretail.png);
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -244,7 +251,7 @@
 }
 
 .PCategoryInner {
-  background-color: #e6f5fa;
+  background-color: #eff7fe;
   width: 85%;
   padding: 42px 42px;
   border-radius: 12px;
@@ -259,15 +266,16 @@
   margin-bottom: 24px;
   font-style: normal;
   font-weight: 200;
-  line-height: normal;
+  line-height: 26px;
   text-align: center;
   margin-bottom: 72px;
 }
 .PCategoryInner h3 {
-  font-size: 24px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  margin-bottom: 12px;
 }
 
 .PCleft {
@@ -301,9 +309,10 @@
 }
 .PContent p {
   color: #000;
-  font-size: 22px;
+  font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
+  line-height: 28px;
   text-align: justify;
   width: 85%;
   margin-bottom: 32px;
@@ -354,8 +363,8 @@
 }
 
 .bannerSection {
-  background-image: url(/assets/bannersection.jpg);
-  background-size: cover;
+  background-image: url(/assets/sample1.png);
+  background-size: 100% 100%;
   background-position: bottom;
   background-repeat: no-repeat;
   height: 250px;

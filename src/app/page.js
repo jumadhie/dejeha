@@ -1,13 +1,33 @@
+"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
 import { product, Client } from "./data";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      <Head>
+        <title>Home</title>
+        <meta
+          name="description"
+          content="Check out iPhone 12 XR Pro and iPhone 12 Pro Max. Visit your local store and for expert advice."
+          key="desc"
+        />
+      </Head>
       <div className={styles.header}>
-        <div className={styles.wrtext}>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.5,
+            delay: 0.2,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+          className={styles.wrtext}
+        >
           <span className={styles.hTitle}>
             Get Quality <span>Products</span> for your Company
           </span>
@@ -20,7 +40,7 @@ export default function Home() {
               brings qualified products to people.
             </p>
           </div>
-        </div>
+        </motion.div>
 
         <div className={styles.imgbanner}></div>
       </div>
@@ -43,7 +63,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* TARGET CUSTOMER */}
+      {/* PRODUK KATEGORI */}
       <div className={styles.PCategory}>
         <div className={styles.PCategoryInner}>
           <h3>Product Category</h3>
