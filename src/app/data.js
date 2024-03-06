@@ -15,9 +15,9 @@ export const product = [
     category: "Industri",
   },
   {
-    name: "Safety Harness",
-    img: "FT4.png",
-    category: "Industri",
+    name: "Apron Medis",
+    img: "FT8.png",
+    category: "Hospital",
   },
   {
     name: "T-Shirt",
@@ -25,14 +25,29 @@ export const product = [
     category: "Retailers",
   },
   {
-    name: "T-Shirt",
-    img: "FT5.png",
+    name: "Sarung Tangan Medis Biru",
+    img: "FT11.png",
+    category: "Hospital",
+  },
+  {
+    name: "Sepatu",
+    img: "FT6.png",
     category: "Retailers",
   },
   {
-    name: "T-Shirt",
-    img: "FT5.png",
-    category: "Retail",
+    name: "Sepatu",
+    img: "FT7.png",
+    category: "Retailers",
+  },
+  {
+    name: "Topi",
+    img: "FT9.png",
+    category: "Corporate",
+  },
+  {
+    name: "Sarung Tangan Medis Putih",
+    img: "FT12.png",
+    category: "Hospital",
   },
 ];
 

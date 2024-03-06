@@ -20,7 +20,7 @@ export default function Home() {
           className={styles.wrtext}
         >
           <span className={styles.hTitle}>
-            Get Quality <span>Products</span> for your Company
+            Get Qualified <span>Products</span> for your Company
           </span>
           <div className={styles.hDescript}>
             <p>
@@ -43,10 +43,13 @@ export default function Home() {
 
         <div className={styles.WTCcard}>
           <div className={styles.TCcard}>
-            <p>Hospital & Clinic</p>
+            <p>Hospital & Clinics</p>
           </div>
           <div className={styles.TCcard}>
-            <p>Industries</p>
+            <p>Industries-Manufactures</p>
+          </div>
+          <div className={styles.TCcard}>
+            <p>Corporates</p>
           </div>
           <div className={styles.TCcard}>
             <p>Retailers</p>

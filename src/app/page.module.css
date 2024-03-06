@@ -182,27 +182,6 @@
   background-position: bottom;
   background-repeat: no-repeat;
 }
-.TCcard:nth-child(1):hover {
-  background-size: 140%;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  transition: all 0.5s;
-  cursor: pointer;
-}
-.TCcard:nth-child(2):hover {
-  background-size: 140%;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  transition: all 0.5s;
-  cursor: pointer;
-}
-.TCcard:nth-child(3):hover {
-  background-size: 140%;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  transition: all 0.5s;
-  cursor: pointer;
-}
 .TCcard:nth-child(2) {
   border-radius: 12px;
   display: flex;
@@ -225,11 +204,55 @@
   flex: 1 0;
   align-self: stretch;
   position: relative;
+  margin-right: 24px;
+  background-image: url(/assets/TCcorporate.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.TCcard:nth-child(4) {
+  border-radius: 12px;
+  display: flex;
+  height: 210px;
+  align-items: center;
+  flex: 1 0;
+  align-self: stretch;
+  position: relative;
   background-image: url(/assets/TCretail.png);
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
 }
+
+.TCcard:nth-child(1):hover {
+  background-size: 140%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.TCcard:nth-child(2):hover {
+  background-size: 140%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.TCcard:nth-child(3):hover {
+  background-size: 140%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.TCcard:nth-child(4):hover {
+  background-size: 140%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
 .TCcard p {
   position: absolute;
   top: 22px;
@@ -405,6 +428,53 @@
   background-color: #edf6f9;
   padding: 12px;
   margin: 12px;
+}
+
+.footer {
+  background-color: #005292;
+  color: white;
+  padding: 42px 72px 42px 72px;
+  display: flex;
+  align-items: center;
+}
+
+.footerLogo {
+  width: 15%;
+  background-image: url(/assets/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  background-color: white;
+  border-radius: 6px;
+  margin-right: 100px;
+  background-position: center;
+}
+
+.wrapInfoFooter {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.infoFooter {
+  margin-bottom: 6px;
+  width: 15%;
+}
+
+.infoFooter:last-child {
+  margin-bottom: 6px;
+  width: 35%;
+}
+.infoFooter p:nth-child(1) {
+  margin-bottom: 6px;
+}
+
+.infoFooter p:nth-child(2) {
+  font-weight: 200;
+}
+.infoFooter p:nth-child(3) {
+  margin-top: 3px;
+  font-weight: 200;
 }
 
 /* 768px -1024px */

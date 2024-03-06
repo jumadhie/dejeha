@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Topbar from "./component/topbar";
+import Footer from "./component/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,9 +19,10 @@ export default function RootLayout({ children }) {
         <Topbar />
         {/*  */}
         {children}
-        <div style={{ height: 200, background: "#00508f" }}>
+        <Footer />
+        {/* <div style={{ height: 200, background: "#00508f" }}>
           <h1>halaman footer</h1>
-        </div>
+        </div> */}
       </body>
     </html>
   );

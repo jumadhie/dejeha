@@ -9,18 +9,27 @@ const dataFilter = [
   {
     id: 1,
     category: "All",
+    name: "All",
   },
   {
     id: 2,
     category: "Hospital",
+    name: "Hospital & Clinics",
   },
   {
     id: 3,
     category: "Industri",
+    name: "Industries-Manufactures",
   },
   {
     id: 4,
     category: "Retailers",
+    name: "Retailers",
+  },
+  {
+    id: 5,
+    category: "Corporate",
+    name: "Corporates",
   },
 ];
 const Product = () => {
@@ -55,7 +64,7 @@ const Product = () => {
                         : styles.itemCategori
                     }
                   >
-                    {d.category}
+                    {d.name}
                   </li>
                 );
               })}
