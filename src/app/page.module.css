@@ -103,7 +103,6 @@
   padding: 3px 10px;
   border-radius: 6px;
   color: #3c3434;
-  /* color: white; */
 }
 
 .hDescript {
@@ -477,6 +476,27 @@
 
 /* 768px -1024px */
 @media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .header {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    background-image: url(/assets/sample1.png);
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    padding: 24px 80px;
+    color: white;
+  }
+  .hTitle span {
+    background-color: #ffd583;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    padding: 0px 10px;
+    border-radius: 6px;
+    color: #3c3434;
+  }
   .WTCcard {
     display: flex;
     justify-content: center;
