@@ -42,12 +42,22 @@ export const product = [
   {
     name: "Topi",
     img: "FT9.png",
-    category: "Corporate",
+    category: "Retailers",
   },
   {
     name: "Sarung Tangan Medis Putih",
     img: "FT12.png",
     category: "Hospital",
+  },
+  {
+    name: "Sarung Tangan Kulit",
+    img: "SR1.png",
+    category: "Industri",
+  },
+  {
+    name: "Sarung Tangan Karet",
+    img: "SR2.png",
+    category: "Industri",
   },
 ];
 

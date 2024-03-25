@@ -14,22 +14,17 @@ const dataFilter = [
   {
     id: 2,
     category: "Hospital",
-    name: "Hospital & Clinics",
+    name: "Medical Devices",
   },
   {
     id: 3,
     category: "Industri",
-    name: "Industries-Manufactures",
+    name: "Safety Equipment",
   },
   {
     id: 4,
     category: "Retailers",
-    name: "Retailers",
-  },
-  {
-    id: 5,
-    category: "Corporate",
-    name: "Corporates",
+    name: "Supplier & Marketing Tools",
   },
 ];
 const Product = () => {
